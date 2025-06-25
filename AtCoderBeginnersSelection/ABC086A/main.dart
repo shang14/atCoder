@@ -1,11 +1,13 @@
 import 'dart:io';
 
-void main(List<String> args) {
-  final nums = stdin.readLineSync().split(" ").map(int.parse).toList();
-  final product = nums[0] * nums[1];
-  if (product % 2 == 0) {
-    print("Even");
+void main() {
+  final input = stdin.readLineSync()!.split(' ');
+  final a = int.parse(input[0]);
+  final b = int.parse(input[1]);
+  
+  if ((a * b) % 2 == 0) {
+    print('Even');
   } else {
-    print("Odd");
+    print('Odd');
   }
 }
